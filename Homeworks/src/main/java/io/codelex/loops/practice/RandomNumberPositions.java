@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 import static org.apache.commons.lang3.RandomUtils.nextInt;
 
+// import static org.apache.commons.lang3.RandomUtils.nextInt;
+
 public class RandomNumberPositions {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,19 +1,18 @@
 package io.codelex.arithmetic.practice;
 
-import io.codelex.NoCodeWrittenException;
-
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 class Geometry {
-    static double areaOfCircle(BigDecimal radius) {
-        throw new NoCodeWrittenException();
+    public static BigDecimal areaOfTriangle(BigDecimal base, BigDecimal height) {
+        return base.multiply(height).divide(new BigDecimal("2"), RoundingMode.HALF_UP);
     }
 
-    static double areaOfRectangle(BigDecimal length, BigDecimal width) {
-        throw new NoCodeWrittenException();
+    public static BigDecimal areaOfCircle(BigDecimal radius) {
+        return BigDecimal.valueOf(Math.PI).multiply(radius).multiply(radius);
     }
 
-    static double areaOfTriangle(BigDecimal base, BigDecimal h) {
-        throw new NoCodeWrittenException();
+    public static BigDecimal areaOfRectangle(BigDecimal length, BigDecimal width) {
+        return length.multiply(width);
     }
 }

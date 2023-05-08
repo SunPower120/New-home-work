@@ -108,18 +108,4 @@ public class CalculateArea {
                 + Geometry.areaOfTriangle(base, height));
 
     }
-
-    public static class Geometry {
-        public static BigDecimal areaOfTriangle(BigDecimal base, BigDecimal height) {
-            return base.multiply(height).divide(new BigDecimal("2"));
-        }
-
-        public static BigDecimal areaOfCircle(BigDecimal radius) {
-            return BigDecimal.valueOf(Math.PI).multiply(radius).multiply(radius);
-        }
-
-        public static BigDecimal areaOfRectangle(BigDecimal length, BigDecimal width) {
-            return length.multiply(width);
-        }
-    }
 }

@@ -2,13 +2,13 @@ package io.codelex.typesandvariables.practice;
 
 public class Exercise4 {
     public static void main(String[] args) {
-        String Name;
-        int YearOffBirth;
+        String name;
+        int yearOffBirth;
 
-        Name = "Juan Valdez";
-        YearOffBirth = 1995;
+        name = "Juan Valdez";
+        yearOffBirth = 1995;
 
-        System.out.println("My name is " + Name + "and I was born in" + YearOffBirth + ".");
+        System.out.println("My name is " + name + "and I was born in" + yearOffBirth + ".");
 
     }
 }

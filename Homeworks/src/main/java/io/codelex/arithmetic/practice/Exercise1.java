@@ -12,8 +12,7 @@ public class Exercise1 {
         System.out.println("Input second Integer:");
         Integer input2Integer = scanner.nextInt();
 
-        boolean condition;
-        condition = input1Integer == 15 ||
+        boolean condition = input1Integer == 15 ||
                 input2Integer == 15 ||
                 input1Integer + input2Integer == 15 ||
                 input1Integer - input2Integer == 15 ||

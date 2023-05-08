@@ -9,7 +9,6 @@ public class CheckOddEven {
         System.out.println("Input random Integer:");
         Integer inputInteger = scanner.nextInt();
 
-        boolean condition;
         if (inputInteger % 2 == 0) {
             System.out.println(inputInteger + " is even number" );
         }

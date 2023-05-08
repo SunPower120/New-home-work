@@ -13,12 +13,11 @@ public class Exercise5 {
         Random random = new Random();
         int randomInteger = random.nextInt(100) + 1;
 
-        if (randomInteger>inputInteger) {
-            System.out.println("Sorry, you are too low.  I was thinking of " +randomInteger);
-        } else if (randomInteger<inputInteger) {
-            System.out.println("Sorry, you are too high.  I was thinking of " +randomInteger);
-        }
-        else System.out.println("You guessed it!  What are the odds?!?");
+        if (randomInteger > inputInteger) {
+            System.out.println("Sorry, you are too low.  I was thinking of " + randomInteger);
+        } else if (randomInteger < inputInteger) {
+            System.out.println("Sorry, you are too high.  I was thinking of " + randomInteger);
+        } else System.out.println("You guessed it!  What are the odds?!?");
     }
 }
 

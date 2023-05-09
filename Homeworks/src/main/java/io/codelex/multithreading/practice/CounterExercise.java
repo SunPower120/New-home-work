@@ -1,7 +1,8 @@
 package io.codelex.multithreading.practice;
 
 import io.codelex.NoCodeWrittenException;
-import org.apache.commons.lang3.RandomUtils;
+
+import java.util.Random;
 
 public class CounterExercise {
 
@@ -20,6 +21,7 @@ public class CounterExercise {
 
         public void increment() {
             try {
+                Random RandomUtils = null;
                 Thread.sleep(RandomUtils.nextLong(0, 100));
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();

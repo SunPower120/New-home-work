@@ -15,16 +15,18 @@ public class RandomNumberPositions {
         System.out.println("Which number index would you like to find?");
 
         int searchFor = scanner.nextInt();
-
         int i;
         boolean foundIt = false;
 
         for (i = 0; i < integers.length; i++) {
-            //todo - search for integer - break when you have found what you searched for
+            if (searchFor == i) {
+                foundIt = true;
+                break;
+            }
         }
 
         if (foundIt) {
-            System.out.println("Found " + searchFor + " at index " + i);
+            System.out.println("Found " + integers[i] + " at index " + i);
         } else {
             System.out.println(searchFor + " is not in the array");
         }

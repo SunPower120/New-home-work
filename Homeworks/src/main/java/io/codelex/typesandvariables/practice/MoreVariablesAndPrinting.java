@@ -2,25 +2,24 @@ package io.codelex.typesandvariables.practice;
 
 public class MoreVariablesAndPrinting {
     public static void main(String[] args) {
-        String myName, myEyes, myTeeth, myHair;
-        int myAge, myHeight, myWeight;
+        String name = "Zed A. Shaw";
+        String eyes = "Blue";
+        String teeth = "White";
+        String hair = "Brown";
+        double age = 35;
+        double height = 74;  // inches
+        double weight = 180; // lbs
+        double heightInCm = height * 2.54;
+        double weightInKg = weight * 0.453592;
+        double sumOffHeWeAge = age + heightInCm + weightInKg;
 
-        myName = "Zed A. Shaw";
-        myAge = 35;
-        myHeight = 74;  // inches
-        myWeight = 180; // lbs
-        myEyes = "Blue";
-        myTeeth = "White";
-        myHair = "Brown";
-
-        System.out.println("Let's talk about " + myName + ".");
-        System.out.println("He's " + myHeight + " inches tall.");
-        System.out.println("He's " + myWeight + " pounds heavy.");
+        System.out.println("Let's talk about " + name + ".");
+        System.out.println("He's " + String.format("%.2f", heightInCm) + " cm tall.");
+        System.out.println("He's " + String.format("%.2f", weightInKg) + " kg heavy.");
         System.out.println("Actually, that's not too heavy.");
-        System.out.println("He's got " + myEyes + " eyes and " + myHair + " hair.");
-        System.out.println("His teeth are usually " + myTeeth + " depending on the coffee.");
-
-        System.out.println("If I add " + myAge + ", " + myHeight + ", and " + myWeight
-                + " I get " + (myAge + myHeight + myWeight) + ".");
+        System.out.println("He's got " + eyes.toLowerCase() + " eyes and " + hair.toLowerCase() + " hair.");
+        System.out.println("His teeth are usually " + teeth.toLowerCase() + " if he dont drink too much coffee.");
+        System.out.println("If I add " + String.format("%.2f", age) + ", " + String.format("%.2f", heightInCm) + ", and " + String.format("%.2f", weightInKg)
+                + " I get " + String.format("%.2f", sumOffHeWeAge) + ".");
     }
 }

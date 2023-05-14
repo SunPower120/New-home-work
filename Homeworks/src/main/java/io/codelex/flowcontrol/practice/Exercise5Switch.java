@@ -10,42 +10,18 @@ public class Exercise5Switch {
         char[] charArray = input.toCharArray();
         String output = "";
 
-        for (int i = 0; i < charArray.length; ) {
-            switch (charArray[i]) {
-                case 'a', 'b', 'c' -> {
-                    output = output.concat("2");
-                    i++;
-                }
-                case 'd', 'e', 'f' -> {
-                    output = output.concat("3");
-                    i++;
-                }
-                case 'g', 'h', 'i' -> {
-                    output = output.concat("4");
-                    i++;
-                }
-                case 'j', 'k', 'l' -> {
-                    output = output.concat("5");
-                    i++;
-                }
-                case 'm', 'n', 'o' -> {
-                    output = output.concat("6");
-                    i++;
-                }
-                case 'p', 'q', 'r', 's' -> {
-                    output = output.concat("7");
-                    i++;
-                }
-                case 't', 'u', 'v' -> {
-                    output = output.concat("8");
-                    i++;
-                }
-                case 'w', 'x', 'y', 'z' -> {
-                    output = output.concat("9");
-                    i++;
-                }
+        for (char c : charArray) {
+            switch (c) {
+                case 'a', 'b', 'c' -> output = output.concat("2");
+                case 'd', 'e', 'f' -> output = output.concat("3");
+                case 'g', 'h', 'i' -> output = output.concat("4");
+                case 'j', 'k', 'l' -> output = output.concat("5");
+                case 'm', 'n', 'o' -> output = output.concat("6");
+                case 'p', 'q', 'r', 's' -> output = output.concat("7");
+                case 't', 'u', 'v' -> output = output.concat("8");
+                case 'w', 'x', 'y', 'z' -> output = output.concat("9");
                 default -> {
-                    System.out.println("String contains unrecognisable symbols");
+                    System.out.println("String contains unrecognizable symbols");
                     return;
                 }
             }

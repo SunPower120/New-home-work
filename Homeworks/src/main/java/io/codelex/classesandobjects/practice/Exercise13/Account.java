@@ -1,8 +1,8 @@
-package io.codelex.classesandobjects.practice;
+package io.codelex.classesandobjects.practice.Exercise13;
 
 public class Account {
     private double balance;
-    private String owner;
+    private final String owner;
 
     public Account(String owner, double balance) {
         this.balance = balance;
@@ -17,8 +17,10 @@ public class Account {
         balance -= amount;
     }
 
-    public double balance() {
-        return balance;
+
+    public static void transfer(Account from, Account to, double howMuch) {
+        from.withdrawal(howMuch);
+        to.deposit(howMuch);
     }
 
     @Override

@@ -18,16 +18,14 @@ public class FuelGauge {
         return currenAmount;
     }
 
-    public double fillUppOneLiter() {
+    public void fillUppOneLiter() {
 
         if (currenAmount <= 70) {
             currenAmount = currenAmount + 1;
-            return currenAmount;
         } else {
             System.out.println("Your car has full tank");
         }
 
-        return currenAmount;
     }
 
     public void reduce() {

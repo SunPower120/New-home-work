@@ -17,17 +17,16 @@ public class SavingsInterface {
         monthsAccOpen();
 
         for (int i = 1; i <= months; i++) {
+            Scanner scan = new Scanner(System.in);
 
             System.out.println("Enter amount deposited for month: " + i);
-            Scanner scan = new Scanner(System.in);
             double deposit = scan.nextDouble();
             personalSavingAcc.deposit(deposit);
             depositAccumulator = depositAccumulator + deposit;
 
 
             System.out.println("Enter amount withdrawn for month: " + i);
-            Scanner scan2 = new Scanner(System.in);
-            double withdrawal = scan2.nextDouble();
+            double withdrawal = scan.nextDouble();
             personalSavingAcc.withdraw(withdrawal);
             withdrawAccumulator = withdrawAccumulator + withdrawal;
 

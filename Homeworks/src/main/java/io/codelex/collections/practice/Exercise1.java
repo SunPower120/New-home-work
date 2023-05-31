@@ -1,5 +1,7 @@
 package io.codelex.collections.practice;
 
+import java.util.*;
+
 /**
  * Origination:
  * Audi -> Germany
@@ -11,12 +13,36 @@ package io.codelex.collections.practice;
  */
 public class Exercise1 {
     public static void main(String[] args) {
-        String[] array = {"Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Mercedes", "Tesla"};
 
-        //todo - replace array with an ArrayList and print out the results
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Audi");
+        cars.add("BMW");
+        cars.add("Honda");
+        cars.add("Mercedes");
+        cars.add("VolksWagen");
+        cars.add("Mercedes");
+        cars.add("Tesla");
+        System.out.println(cars);
 
-        //todo - replace array with a HashSet and print out the results
+        Map<Integer, String> cars2 = new HashMap<>();
+        cars2.put(1, "Audi");
+        cars2.put(2, "BMW");
+        cars2.put(3, "Honda");
+        cars2.put(4, "Mercedes");
+        cars2.put(5, "VolksWagen");
+        cars2.put(6, "Mercedes");
+        cars2.put(7, "Tesla");
+        System.out.println(cars2);
 
-        //todo - replace array with a HashMap (use brand as key and origination as value) an print out the results
+        Set<String> cars3 = new HashSet<>();
+        cars3.add("Audi");
+        cars3.add("BMW");
+        cars3.add("Honda");
+        cars3.add("Mercedes");
+        cars3.add("VolksWagen");
+        cars3.add("Mercedes");
+        cars3.add("Tesla");
+        System.out.println(cars3);
+
     }
 }

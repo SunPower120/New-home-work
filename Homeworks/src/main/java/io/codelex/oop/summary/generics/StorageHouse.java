@@ -9,17 +9,17 @@ public class StorageHouse {
     //Fix this class so that storage house can contain other types of objects not only numbers
     //Test the functionality
 
-    List<Integer> items = new ArrayList<>();
+    List<Object> items = new ArrayList<>();
 
-    public StorageHouse(Integer firstItem) {
+    public StorageHouse(Object firstItem) {
         items.add(firstItem);
     }
 
-    public void addMoreItems(Integer item) {
+    public void addMoreItems(Object item) {
         items.add(item);
     }
 
-    public Optional<Integer> getMaybeFirstItem() {
+    public Optional<Object> getMaybeFirstItem() {
         return items.stream().findFirst();
     }
 

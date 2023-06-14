@@ -49,10 +49,14 @@ public abstract class BankCard {
 
 
     public void addBalance(BigDecimal add) {
+
         balance = balance.add(add);
     }
 
     public void removeBalance(BigDecimal remove) {
+        if (balance.compareTo(remove) < 0) {
+            throw new NotEnoughFundsException("Insufficient balance on the card!");
+        }
         balance = balance.subtract(remove);
     }
 }

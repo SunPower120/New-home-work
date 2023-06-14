@@ -16,6 +16,7 @@ public class DebitCard extends BankCard {
         if (newBalance.compareTo(new BigDecimal("10000")) > 0) {
             System.out.println("Warning: Too much money");
         }
+
     }
 }
 

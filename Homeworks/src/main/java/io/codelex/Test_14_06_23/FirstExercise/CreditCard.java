@@ -16,6 +16,9 @@ public class CreditCard extends BankCard {
         if (newBalance.compareTo(new BigDecimal("100")) < 0) {
             System.out.println("Warning: Low funds");
         }
+        if (newBalance.compareTo(remove) < 0) {
+            throw new NotEnoughFundsException("Insufficient balance on the card!");
+        }
     }
 }
 

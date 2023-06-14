@@ -19,7 +19,6 @@ public class Joiner<T> {
             joiner.append(item.toString()).append(separator);
         }
 
-        // Remove the last separator
         joiner.setLength(joiner.length() - separator.length());
 
         return joiner.toString();

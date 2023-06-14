@@ -13,14 +13,14 @@ public class Basket<T> {
 
     public void addToBasket(T item) {
         if (items.size() == MAX_ITEMS) {
-            throw new BasketFullException("Basket is full. Cannot add more items.");
+            throw new BasketFullException("Basket is full");
         }
         items.add(item);
     }
 
     public void removeFromBasket() {
         if (items.isEmpty()) {
-            throw new BasketEmptyException("Basket is empty. Cannot remove any more items.");
+            throw new BasketEmptyException("Basket is empty");
         }
         items.remove(items.size() - 1);
     }

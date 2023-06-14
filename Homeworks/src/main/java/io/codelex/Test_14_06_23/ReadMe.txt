@@ -50,7 +50,9 @@ with mushrooms and that exceptions are thrown.
 ## Exercise #3
 #### (generics + tests)
 
-Design the Joiner<T> class, which in the constructor will take a separator (string) and have a join() method that allows you to specify any number of T-type objects. This method will return a string joining all passed elements by calling their toString() method and separating them with a separator.
+Design the Joiner<T> class, which in the constructor will take a separator (string) and have a join() method that allows you
+to specify any number of T-type objects. This method will return a string joining all passed elements by calling their toString()
+method and separating them with a separator.
 
 Write a test for the class.
 
@@ -63,7 +65,8 @@ Write a program that will read any file and save it in the same folder. The cont
 
 ## Exercise #5
 #### (generics + functional programming)
-Implement the generic partOf method, which will return % of items satisfying the condition based on any type of list and the function indicated as parameter.
+Implement the generic partOf method, which will return % of items satisfying the condition based on any type of list and the
+function indicated as parameter.
 
 Example of how it should work:
 ```java

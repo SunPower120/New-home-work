@@ -13,8 +13,8 @@ class JoinerTest {
         Assertions.assertEquals("1-2-3-4-5", result);
 
         Joiner<String> stringJoiner = new Joiner<>(", ");
-        String resultStr = stringJoiner.join(Arrays.asList("Hello", "World", "!"));
-        Assertions.assertEquals("Hello, World, !", resultStr);
+        String resultStr = stringJoiner.join(Arrays.asList("First", "Second", "!"));
+        Assertions.assertEquals("First, Second, !", resultStr);
     }
 }
 

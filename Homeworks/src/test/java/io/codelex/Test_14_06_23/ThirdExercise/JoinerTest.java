@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 class JoinerTest {
     @Test
-    void shouldJoinElementsWithSeparator() {
+    void joinerTest() {
         Joiner<Integer> integerJoiner = new Joiner<>("-");
         String result = integerJoiner.join(Arrays.asList(1, 2, 3, 4, 5));
         Assertions.assertEquals("1-2-3-4-5", result);

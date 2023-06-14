@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class BasketTest {
 
     @Test
-    public void shouldStoreItemsAndThrowExceptionWhenFull() {
+    public void storeAndError() {
         Basket<Apple> appleBasket = new Basket<>();
         for (int i = 0; i < 10; i++) {
             appleBasket.addToBasket(new Apple());
@@ -23,7 +23,7 @@ class BasketTest {
     }
 
     @Test
-    public void shouldRemoveItemsAndThrowExceptionWhenEmpty() {
+    public void removeAndError() {
         Basket<Apple> appleBasket = new Basket<>();
         appleBasket.addToBasket(new Apple());
         appleBasket.removeFromBasket();

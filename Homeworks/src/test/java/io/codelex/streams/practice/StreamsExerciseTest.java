@@ -250,6 +250,11 @@ public class StreamsExerciseTest {
     }
 
     @Test
+    public void shouldReturnTrueForPrimeNumbers() {
+        assertTrue(StreamsExercise.isPrime(89));
+    }
+
+    @Test
     public void shouldCollectToString() {
         String sample = "Working with Java8 Streams";
         String result = sample.chars().mapToObj(a -> ((char) a)).collect(new CharacterToStringCollector());

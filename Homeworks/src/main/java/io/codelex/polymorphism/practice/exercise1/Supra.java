@@ -1,16 +1,21 @@
 package io.codelex.polymorphism.practice.exercise1;
 
-public class Bmw implements Car {
+class Supra implements CarWithNitro {
     private Integer currentSpeed = 0;
 
     @Override
     public void speedUp() {
-        currentSpeed += 12;
+        currentSpeed += 13;
     }
 
     @Override
     public void slowDown() {
-        currentSpeed -= 12;
+        currentSpeed -= 13;
+    }
+
+    @Override
+    public void useNitrousOxideEngine() {
+        currentSpeed = currentSpeed + 40;
     }
 
     @Override
@@ -22,4 +27,6 @@ public class Bmw implements Car {
     public void startEngine() {
         System.out.println("Rrrrrrr.....");
     }
+
+
 }
